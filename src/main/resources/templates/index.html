@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns : th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" th:href="@{/main.css}">
+</head>
+<body>
+    <div th:replace="layouts/header :: header"></div>
+    <div class="presentation">
+
+        <img src="https://itproger.com/img/reg_page/man-seating.svg">
+        <h2>Хочешь стильный рабочий стол?</h2>
+        <p>Здесь ты найдешь самую крутую перифирию</p>
+    </div>
+    
+      <main class = "container">
+          <div class="items" th:if="${!items.isEmpty()}">
+              <div th:each="el : ${items}">
+                  <a th:href="'/item/' + ${el.id}"> <img th:src="${el.image}" alt="${el.title}"> </a>
+                  <h3 th:text="${el.title}" />
+                  <p th:text="${el.info}" />
+                  <span th:text="${el.price} + '$'" />
+              </div>
+          </div>
+
+           <div th:if="${items.isEmpty()}" clas="block">
+               <p>Everything is out of stock :(</p>
+           </div>
+      </main>
+
+    <div th:replace="layouts/footer :: footer"></div>
+</body>
+</html>

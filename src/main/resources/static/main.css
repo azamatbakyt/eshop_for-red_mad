@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    width: 100%;
+
+}
+
+body {
+    background: whitesmoke;
+    font-family: 'Hepta Slab', serif;
+    font-weight: 300;
+}
+
+a {
+
+    text-decoration: none;
+    color: #212351;
+    transition: color 500ms ease;
+    font-family: 'Roboto Slab', serif;
+}
+
+a:hover{
+    color: #1f1f1f;
+}
+
+.container{
+    width: 1258px;
+    margin: 0 auto;
+}
+
+header.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+header .logo{
+    color: black ;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+header nav a{
+    margin-left: 15px;
+
+}
+
+div.block{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid silver;
+    border-bottom-width: 2px;
+    background: #b7c8c2;
+    line-height: 170%;
+}
+
+div.block h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.presentation{
+    float: left;
+    width: 100%;
+    background: #a7a7b9;
+    padding: 50px 200px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+.presentation h2 {
+    color: black;
+    font-size: 35px;
+    padding-top: 90px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.presentation p {
+    color: black ;
+    font-size: 16px;
+    padding-top: 7px;
+    max-width: 380px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.presentation img {
+    float: right;
+    width: 300px;
+    position: relative;
+    top: 51px;
+}
+
+.items {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.items > div{
+    width: 30%;
+    margin-bottom: 30px;
+    background: #1f1f1f;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.items > div h3 {
+    color: #fff;
+    margin: 7px 0;
+    font-size: 23px;
+}
+
+.items > div p{
+    color: #a7a7a7;
+}
+
+.items > div span{
+
+    background: #1f1f1f;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    font-weight: 600;
+    color: #6a5412;
+
+}
+
+form input,
+form textarea {
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    display: block;
+    margin-top: 20px;
+    resize: none;
+
+}
+
+form button, .edit-btn  {
+    position: relative;
+    display: inline-block ;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+footer{
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
